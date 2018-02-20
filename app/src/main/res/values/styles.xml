@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.TranslucentActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle" tools:targetApi="11">
+            @style/TransparentActionBar
+        </item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay" tools:targetApi="11">true</item>
+        <item name="actionBarStyle">@style/TransparentActionBar</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="TransparentActionBar">
+        <item name="android:background">@color/transparent</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <!-- Required for pre-Lollipop. -->
+        <item name="overlapAnchor">true</item>
+        <!-- Required for Lollipop. -->
+        <item name="android:overlapAnchor" tools:targetApi="21">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
